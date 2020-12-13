@@ -1,7 +1,7 @@
 # pre-releasematcodes
 Description:
 This branch provides all neccessary information to know about this repository and additional information about the overall creation of the repository.
-Please make sure to check out "ExamInfo-RevCitation" for further inquiries about the exams and software I used to code on.
+Please make sure to check out "ExamInfo-RevCitation" for further inquiries about the exams and software I used to code on and "DirectionsToCodes" for instructions to see codes from each year.
 
 Information:
 This repository provides modal answers to the questions asked in the pre-release materials from 2015 in the Cambridge Computer Science (0478) course. These codes are not charged with money or with any license; you can completely use it for your own purpose and edit to make potential changes to the code or use it to aid your revision for the PAPER-2 of the 0478 course.
