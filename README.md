@@ -4,4 +4,4 @@ Please use these codes appropriately and don't use exploit them to harm other us
 
 Thanks for using my code for aiding your revision/ improving by checking with mark schemes.
 
-Note: Fileforms are RAW version of the code; it won't work in BLAME. Download as .zip if you have python 3.8 installed on computer.
+Note: Fileforms are RAW version of the code; Download as .zip if you have python 3.8 installed on computer.
