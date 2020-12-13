@@ -1,0 +1,74 @@
+eights of each pupil. The weight, in kilograms, of each pupil is recorded on the first day of term. Input and store the weights and names recorded for a class of 30 pupils. You must store the weights in a one-dimensional array and the names in another one-dimensional array. All the weights must be validated on entry and any invalid weights rejected. You must decide your own validation rules. You may assume that the pupils’ names are unique. Output the names and weights of the pupils in the class.
+
+#arrays for storing weights and names
+name_pupil = []
+weight_pupil = []
+
+#loop for entering 30 pupils' names and weights
+for i in range(2):
+  name_p = input("Enter the child's name:")
+  name_pupil.append(name_p)
+  print("The pupil's name is:", name_pupil[i])
+  print("---")
+  weight_p = input("Enter the child's weight:")
+  if weight_p.isnumeric() == True:
+    weight_p = int(weight_p)
+    weight_pupil.append(weight_p)
+  else:
+    print("Code error, sorry it is rejected.")
+    weight_pupil.append("null")
+  print("The pupil's weight is:", weight_pupil[i])
+  print("---")
+
+#The weight, in kilograms, of each pupil is recorded again on the last day of term. Calculate and store the difference in weight for each pupil.
+
+#array for storing end term weight and difference
+weight_pupil2 = []
+difference_pupil = []
+
+#inserting end term weight
+
+for i in range(2):
+  weight_p2 = input("Enter the end term weight of the pupil:")
+  if weight_p2.isnumeric() == True:
+    weight_p2 = int(weight_p2)
+    weight_pupil2.append(weight_p2)
+    print("Pupil's end term weight:", weight_pupil2[i])
+    print('---')
+  else:
+    weight_pupil2.append("null")
+    print("Code error, sorry it is rejected")
+    print("Pupil's end term weight:", weight_pupil2[i])
+    print("---")
+  #finding the difference
+  if weight_pupil[i] == "null":
+    difference_pupil.append("-")
+  elif weight_pupil2[i] == "null":
+    difference_pupil.append("-")
+  else:
+    difference_pupil.append((weight_pupil2[i] - weight_pupil[i]))
+  print("Difference is:", difference_pupil[i])
+  print("---")
+
+#For those pupils who have a difference in weight of more than 2.5 kilograms, output, with a suitable message, the pupil’s name, the difference in weight and whether this is a rise or a fall.
+
+#checking if the difference is more than 2.5 kilograms
+for i in range(2):
+  if difference_pupil[i] == "-":
+    print("Pupil", name_pupil[i],"'s difference cannot be found due to input error!")
+    print("---")
+  elif difference_pupil[i] > 2.5:
+    print("Pupil", name_pupil[i], "'s difference is a rise.")
+    print("---")
+
+  elif difference_pupil[i] < -2.5:
+    print("Pupil", name_pupil[i], "'s difference is a fall.")
+    print("---")
+
+  elif difference_pupil[i] == 0:
+    print("Pupil", name_pupil[i], "'s difference is zero.")
+    print("---")
+
+#Code ended...
+#Check pre-release material in the 2015-codes branch.
+#Link for code: https://repl.it/@GluteusMinimus/s15pm22#main.py
